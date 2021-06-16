@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/laundry-clothes",
+      "handler": "laundry-clothes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laundry-clothes/count",
+      "handler": "laundry-clothes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laundry-clothes/:id",
+      "handler": "laundry-clothes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/laundry-clothes",
+      "handler": "laundry-clothes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/laundry-clothes/:id",
+      "handler": "laundry-clothes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/laundry-clothes/:id",
+      "handler": "laundry-clothes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laundry_clothes",
+  "info": {
+    "name": "Laundry Clothes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "laundry": {
+      "model": "laundry",
+      "via": "laundry_clothes"
+    },
+    "clothes": {
+      "model": "type-of-clothes",
+      "via": "laundry_clothes"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "price_each": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

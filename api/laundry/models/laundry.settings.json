@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laundries",
+  "info": {
+    "name": "Laundry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "laundries"
+    },
+    "laundry_statuses": {
+      "collection": "laundry-status",
+      "via": "laundries",
+      "dominant": true
+    },
+    "laundry_clothes": {
+      "via": "laundry",
+      "collection": "laundry-clothes"
+    }
+  }
+}

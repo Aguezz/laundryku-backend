@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laundry_statuses",
+  "info": {
+    "name": "Laundry Status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 50,
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255
+    },
+    "laundries": {
+      "via": "laundry_statuses",
+      "collection": "laundry"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/laundry-statuses",
+      "handler": "laundry-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laundry-statuses/count",
+      "handler": "laundry-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/laundry-statuses/:id",
+      "handler": "laundry-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/laundry-statuses",
+      "handler": "laundry-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/laundry-statuses/:id",
+      "handler": "laundry-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/laundry-statuses/:id",
+      "handler": "laundry-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
