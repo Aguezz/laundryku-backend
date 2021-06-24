@@ -12,9 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "users_permissions_user": {
+      "via": "emails",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "emails"
+      "model": "user"
     },
     "email": {
       "type": "string",

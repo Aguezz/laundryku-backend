@@ -88,6 +88,10 @@
     "laundries": {
       "via": "users_permissions_user",
       "collection": "laundry"
+    },
+    "Name": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

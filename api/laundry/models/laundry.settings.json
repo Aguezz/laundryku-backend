@@ -12,9 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "users_permissions_user": {
+      "via": "laundries",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "laundries"
+      "model": "user"
     },
     "laundry_statuses": {
       "collection": "laundry-status",

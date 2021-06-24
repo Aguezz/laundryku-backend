@@ -1399,6 +1399,10 @@
                 }
               }
             }
+          },
+          "Name": {
+            "type": "string",
+            "maxLength": 255
           }
         }
       },
@@ -1464,6 +1468,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "Name": {
+            "type": "string",
+            "maxLength": 255
           },
           "created_by": {
             "type": "string"
