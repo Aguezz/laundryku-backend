@@ -585,7 +585,7 @@
                   "type": "string"
                 }
               },
-              "Name": {
+              "name": {
                 "type": "string"
               },
               "created_by": {

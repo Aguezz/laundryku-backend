@@ -1400,7 +1400,7 @@
               }
             }
           },
-          "Name": {
+          "name": {
             "type": "string",
             "maxLength": 255
           }
@@ -1469,7 +1469,7 @@
               "type": "string"
             }
           },
-          "Name": {
+          "name": {
             "type": "string",
             "maxLength": 255
           },

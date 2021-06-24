@@ -89,7 +89,7 @@
       "via": "users_permissions_user",
       "collection": "laundry"
     },
-    "Name": {
+    "name": {
       "type": "string",
       "maxLength": 255
     }
