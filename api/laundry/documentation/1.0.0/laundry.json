@@ -599,7 +599,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -616,6 +617,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -635,7 +639,7 @@
               "required": [
                 "id",
                 "quantity",
-                "price_each"
+                "priceEach"
               ],
               "properties": {
                 "id": {
@@ -650,7 +654,7 @@
                 "quantity": {
                   "type": "integer"
                 },
-                "price_each": {
+                "priceEach": {
                   "type": "integer"
                 },
                 "published_at": {

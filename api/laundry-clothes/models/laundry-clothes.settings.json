@@ -24,7 +24,7 @@
       "type": "integer",
       "required": true
     },
-    "price_each": {
+    "priceEach": {
       "type": "biginteger",
       "required": true
     }

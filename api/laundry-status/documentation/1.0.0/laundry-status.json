@@ -530,7 +530,8 @@
       "Laundry-status": {
         "required": [
           "id",
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "id": {
@@ -581,6 +582,10 @@
               }
             }
           },
+          "code": {
+            "type": "string",
+            "maxLength": 10
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -589,7 +594,8 @@
       },
       "NewLaundry-status": {
         "required": [
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "name": {
@@ -605,6 +611,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "code": {
+            "type": "string",
+            "maxLength": 10
           },
           "published_at": {
             "type": "string",

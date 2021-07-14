@@ -550,7 +550,7 @@
               "required": [
                 "id",
                 "quantity",
-                "price_each"
+                "priceEach"
               ],
               "properties": {
                 "id": {
@@ -565,7 +565,7 @@
                 "quantity": {
                   "type": "integer"
                 },
-                "price_each": {
+                "priceEach": {
                   "type": "integer"
                 },
                 "published_at": {

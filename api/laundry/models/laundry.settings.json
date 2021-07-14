@@ -17,8 +17,8 @@
       "model": "user"
     },
     "laundry_statuses": {
-      "collection": "laundry-status",
       "via": "laundries",
+      "collection": "laundry-status",
       "dominant": true
     },
     "laundry_clothes": {

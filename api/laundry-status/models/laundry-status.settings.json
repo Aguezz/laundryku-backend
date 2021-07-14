@@ -26,6 +26,12 @@
     "laundries": {
       "via": "laundry_statuses",
       "collection": "laundry"
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10,
+      "unique": true
     }
   }
 }

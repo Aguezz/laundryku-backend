@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/24/2021 1:39:24 PM"
+    "x-generation-date": "07/13/2021 9:16:26 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4997,7 +4997,7 @@
         "required": [
           "id",
           "quantity",
-          "price_each"
+          "priceEach"
         ],
         "properties": {
           "id": {
@@ -5073,7 +5073,7 @@
           "quantity": {
             "type": "integer"
           },
-          "price_each": {
+          "priceEach": {
             "type": "integer"
           },
           "published_at": {
@@ -5085,7 +5085,7 @@
       "NewLaundry-clothes": {
         "required": [
           "quantity",
-          "price_each"
+          "priceEach"
         ],
         "properties": {
           "laundry": {
@@ -5097,7 +5097,7 @@
           "quantity": {
             "type": "integer"
           },
-          "price_each": {
+          "priceEach": {
             "type": "integer"
           },
           "published_at": {
@@ -5115,7 +5115,8 @@
       "Laundry-status": {
         "required": [
           "id",
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "id": {
@@ -5166,6 +5167,10 @@
               }
             }
           },
+          "code": {
+            "type": "string",
+            "maxLength": 10
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5174,7 +5179,8 @@
       },
       "NewLaundry-status": {
         "required": [
-          "name"
+          "name",
+          "code"
         ],
         "properties": {
           "name": {
@@ -5190,6 +5196,10 @@
             "items": {
               "type": "string"
             }
+          },
+          "code": {
+            "type": "string",
+            "maxLength": 10
           },
           "published_at": {
             "type": "string",
@@ -5288,7 +5298,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "code"
               ],
               "properties": {
                 "id": {
@@ -5305,6 +5316,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "code": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5324,7 +5338,7 @@
               "required": [
                 "id",
                 "quantity",
-                "price_each"
+                "priceEach"
               ],
               "properties": {
                 "id": {
@@ -5339,7 +5353,7 @@
                 "quantity": {
                   "type": "integer"
                 },
-                "price_each": {
+                "priceEach": {
                   "type": "integer"
                 },
                 "published_at": {
@@ -5412,7 +5426,7 @@
               "required": [
                 "id",
                 "quantity",
-                "price_each"
+                "priceEach"
               ],
               "properties": {
                 "id": {
@@ -5427,7 +5441,7 @@
                 "quantity": {
                   "type": "integer"
                 },
-                "price_each": {
+                "priceEach": {
                   "type": "integer"
                 },
                 "published_at": {
